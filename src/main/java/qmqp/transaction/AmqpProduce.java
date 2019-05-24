@@ -1,4 +1,4 @@
-package qmqp;
+package qmqp.transaction;
 
 import java.io.IOException;
 
@@ -25,7 +25,7 @@ public class AmqpProduce {
          */
         ConnectionFactory factory = new ConnectionFactory();
         //设置MabbitMQ所在主机ip或者主机名
-        factory.setHost("10.6.1.190");
+        factory.setHost("127.0.0.1");
         //指定用户 密码
         factory.setUsername("gs-test");
         factory.setPassword("gs-test");

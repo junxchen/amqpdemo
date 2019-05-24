@@ -1,4 +1,4 @@
-package qmqp;
+package qmqp.transaction;
 
 import java.io.IOException;
 import java.util.Random;
@@ -67,7 +67,7 @@ public class AmqpConsumer {
 
         //打开连接和创建频道，与发送端一样
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("10.6.1.190");
+        factory.setHost("127.0.0.1");
         //指定用户 密码
         factory.setUsername("gs-test");
         factory.setPassword("gs-test");
